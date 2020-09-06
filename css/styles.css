@@ -18,3 +18,9 @@ nav {
   background: #ccc;
   padding: 20px;
 }
+
+a{
+	padding-right: 10px;
+	text-decoration:none;
+	color: rgb(120, 163, 38);
+}

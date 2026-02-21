@@ -1,30 +1,268 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="media/favicon.png" type="image/png" sizes="16x16">
-	<title>Abhishek Shah| Software Engineer</title>
-	<link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8" />
+	<title>Abhishek Shah | Distributed Systems & Cloud-Native Architect</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Abhishek Shah - Software Architect specializing in distributed systems, cloud-native microservices, and EV charging platforms." />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+<header class="site-header">
+	<div class="container nav-container">
+		<div class="logo">AS</div>
+		<nav class="nav">
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#experience">Experience</a>
+			<a href="#contact">Contact</a>
+			<a href="Abhishek_Shah.pdf" class="btn btn-outline" download>Resume</a>
+		</nav>
+	</div>
+</header>
 
-	<h2>Abhishek Shah</h2>
-	<!--<img src="media/profile.jpg" alt="Abhishek Shah" width="104" height="142">-->
-	<p>Software Engineer, fitness enthusiast, passionate about learning the new technologies.</p>
-	<p>Currently working @ <a href="https://greenlots.com" target="_blank"><img src="media/shell.png" style="max-width:100%;height:auto;"></a></p>
-	<br>
-	<a href="https://github.com/shahcoding" target="_blank">
-	<img src="media/github.svg">
-	</a>
-	<a href="https://www.linkedin.com/in/shahcoding" target="_blank">
-	<img src="media/download.svg">
-	</a>
-	<a href="https://www.instagram.com/abhishk_shah/" target="_blank">
-	<img src="media/instagram.svg">
-	</a>
-	<a href="https://twitter.com/ashah31389" target="_blank">
-	<img src="media/twitter.svg">
-	</a>
+<main>
+	<!-- HERO -->
+	<section class="hero">
+		<div class="container hero-grid">
+			<div class="hero-text">
+				<p class="hero-kicker">Software Architect • Distributed Systems • Cloud-Native</p>
+				<h1>Hi, I’m Abhishek Shah.</h1>
+				<p class="hero-subtitle">
+					I design and scale cloud-native, highly available distributed systems—most recently in EV charging and POS—
+					with a focus on performance, resilience, and operational excellence.
+				</p>
+				<div class="hero-actions">
+					<a href="Abhishek_Shah.pdf" class="btn" download>Download Resume</a>
+					<a href="#experience" class="btn btn-secondary">View Experience</a>
+				</div>
+				<div class="hero-meta">
+					<span>📍 Los Angeles, California</span>
+					<span>✉️ <a href="mailto:shahcoding@gmail.com">shahcoding@gmail.com</a></span>
+					<span>🔗 <a href="https://www.linkedin.com/in/shahcoding" target="_blank" rel="noreferrer">LinkedIn</a></span>
+					<span>💻 <a href="https://github.com/shahcoding" target="_blank" rel="noreferrer">GitHub</a></span>
+				</div>
+			</div>
+			<div class="hero-photo">
+				<div class="photo-frame">
+					<img src="profile.jpg" alt="Abhishek Shah" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<section id="about" class="section">
+		<div class="container">
+			<h2>About</h2>
+			<p>
+				I’m a hands-on Software Architect and founding engineer with nearly 15 years of experience designing and scaling
+				cloud-native platforms. I’ve architected high-throughput, low-latency systems supporting 100K+ connected devices
+				and vehicles using protocols like OCPP, OCPI, and ISO 15118.
+			</p>
+			<p>
+				My work spans microservices architecture, domain-driven design, and event-driven systems, with deep expertise in
+				Java, Spring Boot, Kafka, Kubernetes, and AWS. I care about performance engineering, system resilience, and
+				DevSecOps—embedding quality gates, security scanning, and observability into the delivery pipeline.
+			</p>
+			<p>
+				I enjoy leading modernization initiatives, mentoring engineers, and driving technical strategy while staying
+				close to the code: debugging complex production issues, refactoring critical paths, and continuously optimizing
+				large-scale systems.
+			</p>
+		</div>
+	</section>
+
+	<!-- SKILLS -->
+	<section id="skills" class="section section-alt">
+		<div class="container">
+			<h2>Technical Skills</h2>
+
+			<div class="skills-grid">
+
+				<!-- Core Architecture & Backend Engineering -->
+				<div class="card">
+					<h3>Core Architecture & Backend Engineering</h3>
+					<ul>
+						<li>Distributed Systems</li>
+						<li>Cloud-Native Architecture</li>
+						<li>Microservices (Spring Boot 3.x, Spring Framework 6.x)</li>
+						<li>Domain-Driven Design (DDD)</li>
+						<li>Event-Driven Systems</li>
+						<li>Enterprise Integration Patterns</li>
+						<li>High-throughput / Low-latency Systems</li>
+						<li>RESTful APIs</li>
+					</ul>
+				</div>
+
+				<!-- EV Charging & Protocols -->
+				<div class="card">
+					<h3>EV Charging & Industry Protocols</h3>
+					<ul>
+						<li>OCPP 1.6 / 2.0.1</li>
+						<li>OCPI 2.1.1 / 2.2.1</li>
+						<li>ISO 15118 (Plug & Charge)</li>
+						<li>WebSockets, TCP, HTTPS</li>
+					</ul>
+				</div>
+
+				<!-- Cloud & DevOps Engineering -->
+				<div class="card">
+					<h3>Cloud & DevOps Engineering</h3>
+					<ul>
+						<li>AWS (EC2, EKS, Lambda, S3, API Gateway, ALB/ELB, ECR, ACM, WAF)</li>
+						<li>Kubernetes, Docker, Helm, Istio</li>
+						<li>Argo CD, Jenkins, TeamCity</li>
+						<li>CI/CD Pipelines</li>
+					</ul>
+				</div>
+
+				<!-- Messaging, Data & Storage -->
+				<div class="card">
+					<h3>Messaging, Data & Storage</h3>
+					<ul>
+						<li>Kafka, EventBridge, SQS/SNS</li>
+						<li>Redis, DynamoDB, Aurora, RDS</li>
+						<li>MySQL, PostgreSQL</li>
+						<li>Elasticsearch</li>
+						<li>Hibernate/JPA</li>
+					</ul>
+				</div>
+
+				<!-- Observability, Security & Reliability -->
+				<div class="card">
+					<h3>Observability, Security & Reliability</h3>
+					<ul>
+						<li>Dynatrace, Datadog</li>
+						<li>SonarQube, Apiiro</li>
+						<li>OAuth2, OpenID, SAML</li>
+						<li>Performance Engineering</li>
+						<li>Incident Response & Root Cause Analysis</li>
+					</ul>
+				</div>
+
+				<!-- Additional Experience -->
+				<div class="card">
+					<h3>Additional Experience</h3>
+					<ul>
+						<li>Micro-Frontend Architecture</li>
+						<li>PrimeFaces, JSP, JSF</li>
+						<li>Python</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- EXPERIENCE -->
+	<section id="experience" class="section">
+		<div class="container">
+			<h2>Experience</h2>
+
+			<article class="experience-item">
+				<header class="experience-header">
+					<div>
+						<h3>Platform Architect</h3>
+						<p class="company">Shell Recharge Solutions</p>
+					</div>
+					<div class="experience-meta">
+						<span>~9 years</span>
+						<span>Los Angeles, California</span>
+					</div>
+				</header>
+
+				<p class="experience-summary">
+					Hands-on software architect and founding engineer leading the design and evolution of large-scale distributed
+					systems, EV charging protocols, platform modernization, and operational excellence in a high-growth environment.
+				</p>
+
+				<ul class="experience-bullets">
+					<li>Architected and led development of a horizontally scalable core platform supporting <strong>100K+ concurrent charging stations</strong> over persistent WebSocket connections using OCPP 1.6 and 2.0.1.</li>
+					<li>Designed and delivered <strong>ISO 15118 (Plug & Charge)</strong> capabilities enabling secure, certificate-based vehicle authentication.</li>
+					<li>Led domain-driven decomposition of a monolith into microservices across Pricing, Payments, Charging, Security, OCPI, Analytics, and more.</li>
+					<li>Optimized database and API performance to maintain <strong>&lt; 500 ms latency</strong> while reducing cloud infrastructure costs.</li>
+					<li>Modernized deployments by migrating to Kubernetes with reusable Helm charts adopted organization-wide.</li>
+					<li>Led production incident response and root cause analysis with SRE teams.</li>
+					<li>Embedded automated quality and security governance using SonarQube and Apiiro.</li>
+					<li>Remained deeply hands-on with production code, debugging, refactoring, and performance tuning.</li>
+				</ul>
+			</article>
+
+			<article class="experience-item">
+				<header class="experience-header">
+					<div>
+						<h3>Software Engineer → Technical Lead</h3>
+						<p class="company">Samin Tekmindz</p>
+					</div>
+					<div class="experience-meta">
+						<span>~6 years</span>
+						<span>Noida, India</span>
+					</div>
+				</header>
+
+				<p class="experience-summary">
+					Progressed from Intern to Technical Lead, managing end-to-end delivery of features for high-traffic POS and early-stage EV charging platforms.
+				</p>
+
+				<ul class="experience-bullets">
+					<li>Led cross-functional teams delivering full-stack features across backend and user-facing applications.</li>
+					<li>Designed secure RESTful APIs using OAuth and encryption for mobile integrations.</li>
+					<li>Improved engineering efficiency through standardized code reviews and mentoring.</li>
+					<li>Built early EV systems that formed the foundation for later large-scale charging architecture work.</li>
+				</ul>
+			</article>
+
+			<article class="experience-item">
+				<header class="experience-header">
+					<div>
+						<h3>B.Tech, Computer Science & Engineering</h3>
+						<p class="company">Uttar Pradesh Technical University</p>
+					</div>
+					<div class="experience-meta">
+						<span>Completed</span>
+					</div>
+				</header>
+			</article>
+
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section id="contact" class="section section-alt">
+		<div class="container">
+			<h2>Contact</h2>
+			<p class="lead">
+				Interested in discussing distributed systems, EV charging platforms, or cloud-native architecture roles?
+				Reach out and let’s talk.
+			</p>
+			<div class="contact-grid">
+				<div>
+					<p><strong>Email:</strong> <a href="mailto:shahcoding@gmail.com">shahcoding@gmail.com</a></p>
+					<p><strong>Location:</strong> Los Angeles, California</p>
+					<p><strong>Phone:</strong> <a href="tel:+14158230320">+1 (415) 823-0320</a></p>
+				</div>
+				<div>
+					<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shahcoding" target="_blank" rel="noreferrer">linkedin.com/in/shahcoding</a></p>
+					<p><strong>GitHub:</strong> <a href="https://github.com/shahcoding" target="_blank" rel="noreferrer">github.com/shahcoding</a></p>
+					<a href="Abhishek_Shah.pdf" class="btn-footer" download>Download Resume</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer">
+	<div class="container footer-content">
+		<p>© <span id="year"></span> Abhishek Shah. All rights reserved.</p>
+	</div>
+</footer>
+
+<script>
+	document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

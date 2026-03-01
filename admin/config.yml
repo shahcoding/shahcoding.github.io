@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: shahcoding/shahcoding.github.io
-  branch: master
+  branch: decap-test
   auth_scope: repo
   client_id: "${GITHUB_CLIENT_ID}"
 

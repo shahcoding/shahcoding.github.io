@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: shahcoding/shahcoding.github.io
+  branch: master
+  auth_scope: repo
+  client_id: "Ov23linM5jjnJyyCn62j"
+
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "notes"
+    label: "Notes"
+    folder: "content/notes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Notes", name: "notes", widget: "markdown" }
+

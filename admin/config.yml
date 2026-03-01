@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: shahcoding/shahcoding.github.io
-  branch: decap-test
+  branch: master
   base_url: https://cms.shahcoding.workers.dev
   auth_endpoint: auth
 

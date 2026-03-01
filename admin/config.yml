@@ -2,10 +2,11 @@ backend:
   name: github
   repo: shahcoding/shahcoding.github.io
   branch: decap-test
-  auth_scope: repo
-  client_id: "${GITHUB_CLIENT_ID}"
+  base_url: https://cms.shahcoding.workers.dev
+  auth_endpoint: auth
 
-
+# If your site is hosted at shahcoding.github.io,
+# ensure these paths exist in your repo
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -28,4 +29,3 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "URL", name: "url", widget: "string" }
       - { label: "Notes", name: "notes", widget: "markdown" }
-

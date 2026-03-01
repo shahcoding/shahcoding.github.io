@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: shahcoding/shahcoding.github.io
+  branch: master
+  base_url: https://cms.shahcoding.workers.dev
+  auth_endpoint: auth
+
+# If your site is hosted at shahcoding.github.io,
+# ensure these paths exist in your repo
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "notes"
+    label: "Notes"
+    folder: "content/notes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Notes", name: "notes", widget: "markdown" }
+
+  - name: "bookmarks_manager"
+    label: "Bookmarks Manager"
+    # Use 'files' (plural) as a list containing your specific file
+    files:
+      - label: "My Bookmarks"
+        name: "bookmarks_data"
+        file: "content/bookmarks.yml"
+        fields:
+          - label: "Bookmark Categories"
+            name: "categories"
+            widget: "list"
+            add_to_top: true
+            summary: "{{label}}"
+            fields:
+              - { label: "Category Name", name: "label", widget: "string", hint: "e.g., Tech Blogs, Personal, Tools" }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                summary: "{{title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Notes", name: "body", widget: "markdown", required: false }

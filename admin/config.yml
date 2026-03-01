@@ -20,15 +20,23 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "articles"
-    label: "Articles"
-    folder: "content/articles"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Notes", name: "notes", widget: "markdown" }
+  - name: "articles_manager"
+    label: "Articles Manager"
+    files:
+      - label: "My Articles"
+        name: "articles_data"
+        file: "content/articles.yml" # All articles saved in one file
+        fields:
+          - label: "Article List"
+            name: "articles"
+            widget: "list"
+            add_to_top: true # Newest articles appear at the top of the list
+            summary: "{{title}} ({{date}})" # Shows Title and Date in the CMS sidebar
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Date Added", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Notes", name: "notes", widget: "markdown", required: false }
 
   - name: "bookmarks_manager"
     label: "Bookmarks Manager"

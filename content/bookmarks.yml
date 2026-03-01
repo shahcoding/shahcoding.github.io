@@ -1,4 +1,8 @@
 categories:
+  - label: Personal
+    links:
+      - title: Cloudflare Worker
+        url: https://dash.cloudflare.com
   - label: tech-blogs
     links:
       - title: Netflix

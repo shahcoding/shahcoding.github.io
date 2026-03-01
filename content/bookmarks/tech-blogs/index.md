@@ -1,4 +1,4 @@
 ---
-title: Netflix Techblog
-url: https://netflixtechblog.com/
+title: Uber Techblog
+url: https://www.uber.com/en-US/blog/
 ---

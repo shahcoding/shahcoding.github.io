@@ -3,7 +3,7 @@ backend:
   repo: shahcoding/shahcoding.github.io
   branch: master
   auth_scope: repo
-  client_id: "Ov23linM5jjnJyyCn62j"
+  client_id: "${GITHUB_CLIENT_ID}"
 
 
 media_folder: "images/uploads"

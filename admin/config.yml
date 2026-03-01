@@ -30,15 +30,26 @@ collections:
       - { label: "URL", name: "url", widget: "string" }
       - { label: "Notes", name: "notes", widget: "markdown" }
 
-  - name: "bookmarks"
-    label: "Bookmarks"
-    folder: "content/bookmarks"
-    nested:
-      depth: 3 # How many levels deep you can go
-      summary: "{{title}}"
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "External URL", name: "url", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown",required: false }
+  - name: "bookmarks_manager"
+    label: "Bookmarks Manager"
+    # Use 'files' (plural) as a list containing your specific file
+    files:
+      - label: "My Bookmarks"
+        name: "bookmarks_data"
+        file: "content/bookmarks.yml"
+        fields:
+          - label: "Bookmark Categories"
+            name: "categories"
+            widget: "list"
+            add_to_top: true
+            summary: "{{label}}"
+            fields:
+              - { label: "Category Name", name: "label", widget: "string", hint: "e.g., Tech Blogs, Personal, Tools" }
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                summary: "{{title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Notes", name: "body", widget: "markdown", required: false }

@@ -41,4 +41,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "External URL", name: "url", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown",required: false }

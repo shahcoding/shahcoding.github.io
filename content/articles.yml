@@ -1,4 +1,55 @@
 articles:
+  - title: Ambassador Design Patter
+    url: https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador
+    date: 2026-03-25
+    notes: >-
+      ## When to use this pattern
+
+
+      Use this pattern when:
+
+
+      * You must build a common set of client connectivity features for multiple languages or frameworks.
+
+      * You must offload cross-cutting client connectivity concerns to infrastructure developers or other more specialized teams.
+
+      * You must support cloud or cluster connectivity requirements in a legacy application or an application that's difficult to modify.
+
+      * You must support protocols or connectivity patterns that API gateways, service meshes, or standard ingress and egress controls don't handle easily.
+
+
+      This pattern might not be suitable when:
+
+
+      * Network request latency is critical. A proxy introduces minimal overhead, and this overhead might affect the application.
+
+      * Client connectivity features are consumed by a single language. In that case, a better option might be a client library that's distributed to the development teams as a package.
+
+      * Connectivity features can't be generalized and these features require deeper integration with the client application.
+
+      * Your application platform supports prebuilt solutions, like a service mesh, to handle mutual TLS (mTLS), traffic management, and policy capabilities. Use these solutions instead of creating a custom ambassador solution.
+
+
+      Pillar - [Reliability](https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist) design decisions help your workload become **resilient** to malfunction and ensure that it **recovers** to a fully functioning state after a failure occurs.
+
+
+      This pattern introduces a network communications mediation point, so you can add reliability patterns to network communication, like retry or buffering. 
+
+
+      - [RE:07 Self-preservation](https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation)
+
+
+
+
+      Pillar - [Security](https://learn.microsoft.com/en-us/azure/well-architected/security/checklist) design decisions help ensure the **confidentiality**, **integrity**, and **availability** of your workload's data and systems.
+
+
+      With this pattern, you can implement security on network communications that the client can't handle directly. 
+
+
+      - [SE:06 Network controls](https://learn.microsoft.com/en-us/azure/well-architected/security/networking)
+
+      - [SE:07 Encryption](https://learn.microsoft.com/en-us/azure/well-architected/security/encryption)
   - title: AirBNB KV DB - Mussel
     url: https://medium.com/airbnb-engineering/building-a-next-generation-key-value-store-at-airbnb-0de8465ba354
     date: 2026-03-04
